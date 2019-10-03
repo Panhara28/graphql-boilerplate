@@ -1,0 +1,43 @@
+type Customer {
+  id: Int!
+  company: String
+  first_name: String
+  last_name: String
+  email_address: String
+  job_title: String
+  business_phone: String
+  home_phone: String
+  mobile_phone: String
+  fax_number: String
+  address: String
+  city: String
+  state_province: String
+  zip_postal_code: String
+  country_region: String
+  web_page: String
+  notes: String
+  attactments: String
+}
+
+type Query {
+  customers: [Customer]
+  customer(id: Int!): Customer
+}
+
+type Error {
+  status: Boolean
+}
+
+input inputCustomer {
+  id: Int
+  company: String
+  first_name: String
+  last_name: String
+  job_title: String
+}
+
+type Mutation {
+  addCustomer(data: inputCustomer): Boolean
+  editCustomer(data: inputCustomer): Boolean
+  deleteCustomer(data: inputCustomer): Boolean
+}
