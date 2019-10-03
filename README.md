@@ -22,7 +22,7 @@ After you run yarn install successfully you need to run yarn dev for getting sta
 yarn dev
 ```
 
-## License
+## Setup project
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
