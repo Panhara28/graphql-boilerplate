@@ -22,7 +22,41 @@ After you run yarn install successfully you need to run yarn dev for getting sta
 yarn dev
 ```
 
-## Setup project
+## Setup Setting
+create file call setting.ts in src/ and then copy and paste the code below or copy from the src/setting.example.ts
+after that config database connection and your port to run the server.
+
+```js
+module.exports = {
+  mysql: {
+    host: 'localhost',
+    user: 'username',
+    password: 'password',
+    database: 'databasename',
+    connectionLimit: 10
+  },
+  elastic: { node: 'http://128.199.154.16:9200' },
+  port: 3000,
+  production: false,
+}
+```
+
+## Setup Database Connection
+
+create file call DatabasesConnection.ts and copy and paste the code below or copy from the src/databases/DatabasesConnection.example.ts
+after that config your local database.
+
+```js
+const mysql = require("mysql2/promise")
+
+export const conn = mysql.createPool({
+  host: "localhost",
+  user: "username",
+  password: "password",
+  database: "dbname"
+})
+
+```
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
