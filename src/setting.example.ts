@@ -1,9 +1,9 @@
 module.exports = {
   mysql: {
     host: 'localhost',
-    user: 'root',
-    password: '123456',
-    database: 'littlefashion',
+    user: 'username',
+    password: 'password',
+    database: 'databasename',
     connectionLimit: 10
   },
   elastic: { node: 'http://128.199.154.16:9200' },

@@ -1,0 +1,7 @@
+type Custom {
+  custom: String
+}
+
+type Query {
+  custom: [Custom]
+}
