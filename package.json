@@ -15,7 +15,7 @@
     "graphql": "^14.1.1",
     "graphql-cost-analysis": "^1.0.3",
     "md5": "^2.2.1",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "moment-timezone": "^0.5.23",
     "mysql": "^2.16.0",
     "mysql2": "^1.7.0",
